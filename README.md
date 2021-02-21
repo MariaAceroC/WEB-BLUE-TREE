@@ -2,7 +2,7 @@
 
 ## THE  BLUE  TREE WEB 
 
-_Última práctica del curso de Desarrollo de Páginas Webs de Bejob.
+Última práctica del curso de Desarrollo de Páginas Webs de Bejob.
 
 He realizado una " One Page" de fotografía para un repórtero gráfico.
 

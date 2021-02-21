@@ -1,6 +1,6 @@
 #  :sparkles: Trabajo Final :sparkles:
 
- - THE  BLUE  TREE WEB - 
+## THE  BLUE  TREE WEB 
 
 _Última práctica del curso de Desarrollo de Páginas Webs de Bejob.
 
@@ -40,8 +40,8 @@ VisualStudioCode - Editor de código fuente
 # Agradecimientos :purple_heart:
 
 
-A nuestro profesor Eduardo Fierro :man_teacher:
+Eduardo Fierro :man_teacher:
 
-Al proyecto Women4IT :woman_technologist:
+Women4IT :woman_technologist:
 
 

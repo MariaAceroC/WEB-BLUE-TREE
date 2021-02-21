@@ -1,0 +1,343 @@
+
+@charset "UTF-8";
+/* Aquí definimos las Custom properties */
+:root {
+  --negro: #393939;
+  --blanco: #ececec;
+  --blanco-alpha: #ececec99;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #ffffff;
+  --borde-negro: #00000050;
+  --marcado: rgb(127, 195, 255);
+  /* Tipografía */
+  --tipo-principal: Helvetica, Arial, sans-serif;
+}
+
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+    --blanco: #303030;
+    --sombra-ppal: #242424;
+    --sombra-sec: #3c3c3c;
+    --borde-negro: #FFFFFF50;
+  }
+}
+/* Configuramos si un usuario ha activado el modo alto contraste. (BETA) */
+/*
+    Estilos generales para que las etiquetas no contengan propiedades
+    que nos estorben y en todos los navegadores se vean correctamente
+*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+  object-position: center center;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+video {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+  object-position: center center;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  hyphens: auto;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+form, input, textarea, select, button {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+}
+
+body {
+  font-family: var(--tipo-principal);
+  font-size: 100%;
+  min-height: 100vh;
+  background-color: var(--blanco);
+  color: var(--negro);
+  hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes aparecer {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes aparecerTitle {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes aparecer2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.header {
+  width: 100%;
+  padding: 1em 5vw;
+  background: var(--blanco);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation: aparecer 2s ease 1 both;
+}
+.header__h1 {
+  font-size: 1.5em;
+}
+.header__ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__li {
+  margin: 0 1em;
+  color: var(--marcado);
+}
+.section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10vh 5vw;
+  animation: aparecer2 2s ease 1 both;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio {
+  color: white;
+  background: url(../fotos/TORRETTA\ 01.jpg) no-repeat center center/cover fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.inicio__h2 {
+  animation: aparecerTitle 2s ease 1 both 1s;
+}
+.inicio__h3 {
+  animation: aparecerTitle 2s ease 1 both 2s;
+}
+.inicio__p {
+  animation: aparecerTitle 2s ease 1 both 3s;
+}
+
+.trabajos {
+  text-align: center;
+}
+.trabajos__grid {
+  width: 100%;
+  margin: 1em 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+.trabajos__article {
+  position: relative;
+}
+.trabajos .article .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--blanco-alpha);
+  color: var(--blanco);
+  backdrop-filter: blur(20px);
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.trabajos .article:hover .overlay {
+  opacity: 1;
+}
+
+.about .parte {
+  margin: 1em 0;
+}
+
+.about .img {
+  width: 10em;
+  height: 10em;
+}
+
+.footer {
+  width: 100%;
+  min-height: 10vh;
+  background: var(--negro);
+  color: var(--blanco);
+  padding: 5vw;
+}
+.slider {
+  width: 100%;
+  background-image: url(../fotos/fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+  padding: 2em;
+  ;
+
+}
+.slider__img {
+  width: 80%;
+  height: 70%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  border-radius: 1em;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.slider__img.ver {
+  opacity: 1;
+}
+.slider__flecha {
+  width: 2em;
+  height: 2em;
+  font-size: 2em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: initial;
+  position: absolute;
+  top: calc( 50% - 2em );
+  transition: all 0.5s ease;
+  transform: scale(1);
+  cursor: pointer;
+  background-color: var(--background);
+  border-radius: 0.5em;
+  box-shadow: 10px 10px 20px var(--sombra1), -10px -10px 20px var(--sombra2);
+}
+.slider__flecha:hover {
+  transform: scale(0.9);
+}
+.slider__flecha:active {
+  transform: scale(1.1);
+}
+.slider__flecha.siguiente {
+  right: 0.4em;
+}
+.slider__flecha.anterior {
+  left: 0.4em;
+}
+.slider__ul {
+  width: 100%;
+  padding: 0.2em 0;
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: initial;
+}
+.slider__li {
+  width: 1.2em;
+  height: 1.2em;
+  background: khaki;
+  margin: 0.5em;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  background-color: var(--background);
+  border-radius: 1em;
+  box-shadow: 5px 5px 13px var(--sombra1), -5px -5px 13px var(--sombra2);
+  cursor: pointer;
+}
+.slider__li.ver {
+  background: var(--marcado);
+}
+.slider__li:hover {
+  box-shadow: 2px 2px 5px var(--sombra1), -2px -2px 5px var(--sombra2);
+}
+.slider__li:active {
+  box-shadow: 0px 0px 0px var(--sombra1), 0px 0px 0px var(--sombra2);
+}
+
+

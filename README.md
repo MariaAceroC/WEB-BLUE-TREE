@@ -29,12 +29,16 @@ La página es responsive y tiene dark mode.
 
 VisualStudioCode - Editor de código fuente
 
-Lenguajes :capital_abcd:
+# Lenguajes :capital_abcd:
+
 [HTML]
+
 [CSS]
+
 [JavaScript]
 
-Agradecimientos :purple_heart:
+# Agradecimientos :purple_heart:
+
 
 A nuestro profesor Eduardo Fierro :man_teacher:
 

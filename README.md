@@ -1,4 +1,6 @@
-#  :sparkles: Trabajo Final: Web - THE  BLUE  TREE - :sparkles:
+#  :sparkles: Trabajo Final :sparkles:
+
+ - THE  BLUE  TREE WEB - 
 
 _Última práctica del curso de Desarrollo de Páginas Webs de Bejob.
 
@@ -12,7 +14,7 @@ Contiene los siguientes apartados:
 * [Skills]
 * [Contacto]
 
-##Descripción de los apartados:
+## Descripción de los apartados:
 
 * [Home] - Portada de la página
 * [Trabajos] - Muestro las fotografías de diferentes eventos.
@@ -23,7 +25,7 @@ Contiene los siguientes apartados:
 
 La página es responsive y tiene dark mode.
 
-#Construido con 🛠️
+# Construido con 🛠️
 
 VisualStudioCode - Editor de código fuente
 

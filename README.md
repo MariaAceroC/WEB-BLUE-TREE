@@ -16,11 +16,11 @@ Contiene los siguientes apartados:
 
 ## Descripción de los apartados:
 
-* [Home] - Portada de la página
-* [Trabajos] - Aquí muestro las fotografías clasificadas en secciones (prensa, moda, bodas, viajes, producto, deportes, animales y retratos).
-* [Sobre mi] - En este apartado hablo de la vida profesional y personal del ENG, y enlazo con un boton el REEL.
-* [Skills] - Nombro las habilidades y los programas con los que trabaja.
-* [Contacto] - Indico el e-mail y las redes sociales.
+* [Home]- Portada de la página
+* [Trabajos]- Aquí muestro las fotografías clasificadas en secciones(prensa, moda, bodas, viajes, producto, deportes, animales y retratos).
+* [Sobre mi]- En este apartado hablo de la vida profesional y personal del ENG, y enlazo con un boton el REEL.
+* [Skills]- Nombro las habilidades y los programas con los que trabaja.
+* [Contacto]- Indico el e-mail y las redes sociales.
 
 
 La página es responsive y tiene dark mode.
